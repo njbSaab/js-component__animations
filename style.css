@@ -1,0 +1,248 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 180%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.lock {
+  overflow: hidden;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+}
+
+
+/* animatiom */
+._anim-show{
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all .8s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show{
+   transform: translate(0px, 0%);
+   opacity: 1;
+}
+/* animatiom */
+
+
+.page{
+   background-color: #333;
+   position: relative;
+   z-index: 2;
+}
+._container{
+   max-width: 1400px;
+   padding: 0 30px;
+   margin: 0 auto;
+}
+.fullscreen{
+   position: relative;
+   min-height: 100vh;
+}
+.fullscreen__img img{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+.fullscreen__content{
+   z-index: 2;
+   position: relative;
+   min-height: 100vh;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 0 0 20vh 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+/* animatiom */
+.fullscreen__title{
+   font-size: 70px;
+   margin: 0 0 60px 0;
+
+   transform: translate(0, 120%);
+   opacity: 0;
+   transition: all .8s ease 0s;
+}
+.fullscreen__title._active{
+   transform: translate(0, 0%);
+   opacity: 1;
+}
+
+/* animatiom */
+.fullscreen__text{
+   font-size: 30px;
+   line-height: 35px;
+   max-width: 50%;
+
+   transform: translateX(-120%);
+   /* transform: translateY(-120%); */
+   opacity: 0;
+   transition: all .8s ease 0s;
+}
+.fullscreen__text._active{
+   transform: translate(0, 0%);
+   opacity: 1;
+   transition: all .8s ease .4s;
+}
+
+
+
+
+.text{
+   padding: 70px 0;
+   font-size: 18px;
+   line-height: 40px;
+}
+/* animatiom */
+.text__title{
+   font-size: 30px;
+   margin: 0 0 30px 0;
+   transform: translateX(200%);
+   opacity: 0;
+}
+/* animatiom */
+.text__title._active{
+   transition: all .8s ease 0s;
+   transform: translateX(0%);
+   opacity: 1;
+}
+.text__item{
+   overflow: hidden;
+   margin: 0 0 25px 0;
+}
+
+
+
+
+
+.moment{
+   margin: 100px 0;
+}
+.moment__container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.moment__items{
+   display: flex;
+   margin: 0;
+}
+
+.moments__item{
+   flex: 0 1 25%;
+   color: #333;
+   text-align: center;
+}
+
+
+/* animatiom */
+.moments__img{
+   text-align: center;
+   width: 150px;
+   height: 150px;
+
+   display: inline-block;
+   overflow: hidden;
+   position: relative;
+   transform: scale(0);
+   transition: all .8s ease 0s;
+}
+.moments__img._active {
+   transform: scale(1);
+}
+
+/* animatiom */
+.moment__text{
+   padding: 10px 10px;
+   font-size: 18px;
+   line-height: 22px;
+   max-width: 250px;
+   color:aliceblue;
+   background-color: #727070;
+   border-radius: 8px;
+   margin: 0 auto;
+   transform: translate(0px, 50%);
+   opacity: 0;
+   transition: all .3s ease 0;
+}
+.moment__text._active {
+   transform: translate(0,0);
+   opacity: 1;
+   transition: all .8s ease .6s;
+}
+
+
+
+
+.list{
+   padding: 100px 0;
+   background-color: #333;
+}
+.list__container{
+   overflow: hidden;
+}
+.list__title{
+   text-transform: uppercase;
+   font-size: 30px;
+   margin: 0 0 30px 0;
+}
+
+.list__item li{
+   list-style: none;
+   position: relative;
+   margin: 0 0 20px 0;
+
+   transform: translate(-120%, 0);
+   transition: all .3 ease 0s;
+}
+
+.list__item._active li:nth-child(1){
+   transform: translate(0,0);
+   transition: all .8s ease .3s;
+}
+.list__item._active li:nth-child(2){
+   transform: translate(0, 0);
+   transition: all .8s ease .6s;
+}
+.list__item._active li:nth-child(3){
+   transform: translate(0, 0);
+   transition: all .8s ease .9s;
+}
+.list__item._active li:nth-child(4){
+   transform: translate(0, 0);
+   transition: all .8s ease 1.2s;
+} 
+/* .list__item._active li{
+   transform: translate(0,0);
+} */
